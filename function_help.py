@@ -35,7 +35,6 @@ def Verify_number(cellphone, token):
     Return: the name of the person that is register this number.
     """
     import requests
-    from os import getenv
 
     # The API URL
     url = "https://nufi.azure-api.net/enriquecimientoinformacion/v1/busqueda"
@@ -48,13 +47,16 @@ def Verify_number(cellphone, token):
     # The requests to the API
     response = requests.post(url, data=body, headers=headers)
     # The conditions to check the information
-    if response.json()['message'] == 'ok!':
+    if response.status_code == 200:
         if response.json()['data']['person'] is not None:
             return response.json()['data']['person']['names'][0]['display']
         else:
             return 'Phone not registered to any person'
-    else:
+    if response.status_code == 401:
+        return '401'
+    if response.status_code == 400:
         return response.json()['message']
+
 
 def Delete_GMT(hist_dict):
     for date in hist_dict:
