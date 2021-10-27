@@ -27,4 +27,6 @@ RUN echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
 
 EXPOSE 80
 
+ENV _TOKEN=aa1845517c5f41efb922c961f4e48141
+
 CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0", "--port=80"]
