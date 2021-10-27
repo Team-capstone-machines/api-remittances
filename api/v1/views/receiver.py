@@ -41,6 +41,7 @@ def receiver():
     if request.method == 'POST':
         # Conditions to handle the API errors.
         data_json = request.get_json()
+        token = request.headers.get('Ocp-Apim-Subscription-Key')
         if not data_json:
             abort(400, description="Not a JSON")
         if 'name' not in data_json:
@@ -51,7 +52,7 @@ def receiver():
             abort(400, description="Missing phone")
         if len(data_json['phone']) > 40:
             abort(413, description=PETITION_PHONE)
-        verified_number = Verify_number(data_json['phone'])
+        verified_number = Verify_number(data_json['phone'], token)
         if verified_number == data_json['name']:
             if 'cash' not in data_json:
                 abort(400, description="Missing cash")

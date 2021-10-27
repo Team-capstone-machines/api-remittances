@@ -29,7 +29,7 @@ def Convert_int(number):
         return int(number.replace('- ', ''))
 
 
-def Verify_number(cellphone):
+def Verify_number(cellphone, token):
     """ This function consumes the API to verify if the cell
     number is registered in the database of Mexico.
     Return: the name of the person that is register this number.
@@ -37,12 +37,11 @@ def Verify_number(cellphone):
     import requests
     from os import getenv
 
-    _TOKEN = getenv('_TOKEN')
     # The API URL
     url = "https://nufi.azure-api.net/enriquecimientoinformacion/v1/busqueda"
     headers = {
         "Content-Type": "application/json",
-        "Ocp-Apim-Subscription-Key": _TOKEN
+        "Ocp-Apim-Subscription-Key": token
     }
     # The body of the API to do the query
     body = "{\n  \"telefono\": \"" + cellphone + "\"\n}"
