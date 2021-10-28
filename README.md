@@ -1,17 +1,17 @@
-# API - remittances
+# API - remittances (v1.0)
 
-<p align="center"><img src="img/RaaS.gif"></p>
+<p align="center"><img src="img/RaaS.gif" alt="gif logo RaaS"></p>
 
 > [Here](https://github.com/Team-capstone-machines/first_API) is the link to the "Remittances as a Service" application repository.
 
-## Description
+## Description :page_facing_up:
 *An API designed for developers*
 
 The remittances API has been created with the Python framework, Flask. It consists of 3 operations (receiver, history and phones), with a total of 8 endpoints. The complete documentation can be found at Stoplight: [here](https://themachines.stoplight.io/docs/remittances-as-a-service/)
 
 It's REST -Representational State Transfer- architectural design allows to connect several systems based on the HTTP protocol using standard verbs (GET, POST, PUT and DELETE) to query or generate data, and return the queried data in a standard format such as JSON.
 
-## Endpoints
+## Endpoints :dart:
 We provide an API, `remittances`, which allows the creation of a new remittance, the access to the transaction history and the recording of encrypted and decrypted phone numbers. Here is a summary table of the operations:
 
 **Server:** https://api-remittances.azurewebsites.net/api/v1
@@ -30,10 +30,10 @@ On the other hand, we use an API from our partner NUFI in the remittance applica
 
 **Server:** https://nufi.azure-api.net/enriquecimientoinformacion/v1/
 
-| POST | /search | Search for public information of persons on the network |
+| POST | /busqueda | Search for public information of persons on the network |
 | -- | -- | -- |
 
-### Errors
+## Errors :heavy_exclamation_mark:
 Apart from the errors specified in the API documentation in Stoplight, we have implemented in the Remittances as a Service application the following errors corresponding to 4xx status codes:
 
 | CODE | STATUS | MESSAGE |
@@ -41,19 +41,37 @@ Apart from the errors specified in the API documentation in Stoplight, we have i
 | 400 | *Bad Request* | "Invalid name"; "Not a JSON"; "Missing name"; "Missing phone"; "Missing cash"; "field phone invalid format"; "Missing positive(+) or negative(-) sign" |
 | 401 | *Unauthorized* | "Missing Pwd_NUFI"; "The nufi API key has been denied, make sure to send a valid API key and with an active subscription" |
 | 404 | *Not Found* | "Phone id. Not found"; "Invalid amount. Cannot be processed" |
-| 413 | *Request Entity Too Large* |  |
-| 422 | *Unprocessable Entity* |  |
+| 413 | *Request Entity Too Large* | "The petition 'name' exceeds the limits defined by the server" |
+| 422 | *Unprocessable Entity* | "The record exists. POST not possible" |
 
-## Features
+## Features :bulb:
 > Use of the most common HTTP status codes. They can be consulted in the API documentation as well as in the code implementation for our "Remittances as a Service" application.
 
 >
 
 >
 
-## Deploy
+## Deploy :rocket:
 The deployment of this API is under a container registry named `raascontainer` which is deployed as an app service and contains a Docker container of the API application named `demo/api:v1`. All this through Microsoft Azure services.
 
-<p align="center"><img src="img/api_azure.png"></p>
+<p align="center"><img src="img/api_azure.png" alt="Microsoft Azure logo"></p>
 
+## Authors :registered:
+:woman_technologist: **Diana Parra**
+* [GitHub](https://github.com/dianaparr)
+* [Twitter](https://twitter.com/dianaparra017)
+
+:man_technologist: **Brian Zapata**
+* [GitHub](https://github.com/brian-1989)
+* [Twitter](https://twitter.com/BrianZa03390210)
+
+:man_technologist: **Victor Cuartas**
+* [GitHub](https://github.com/vicuartas230/)
+* [Twitter](https://twitter.com/vicuartas230)
+
+***
+
+<p align="center"><img src="img/logo-nufi.png" alt="logo NUFI"></p>
+
+### Technologies and tools :zap:
 
