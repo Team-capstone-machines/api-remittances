@@ -13,7 +13,6 @@
 | [function_help.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/function_help.py) | Helper functions to encrypt phone, convert number to integer, verify number and delete GMT |
 | [requirements.txt](https://github.com/Team-capstone-machines/api-remittances/blob/main/requirements.txt) | File containing the list of dependencies necessary for the correct operation of the application |
 
-<br></br>
 
 **Folder: api/v1/views**
 | FILE | DESCRIPTION |
@@ -22,7 +21,6 @@
 | [phone.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/api/v1/views/phone.py) | Rest API in Flask to route phones |
 | [receiver.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/api/v1/views/receiver.py) | Rest API in Flask to route receiver |
 
-<br></br>
 
 **Folder: models**
 | FILE | DESCRIPTION |
@@ -31,7 +29,6 @@
 | [phones.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/models/phones.py) | Phones class to ORM |
 | [receiver.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/models/receiver.py) | Receiver class to ORM |
 
-<br></br>
 
 **Folder: models/engine**
 | FILE | DESCRIPTION |
@@ -111,7 +108,7 @@ Project developed together with:
 <p align="center"><img src="img/logo_light_bg.png" alt="logo stoplight" style="width: 20%"> <img src="img/azure-logo.png" alt="logo azure" style="width: 20%"> <img src="img/docker-logo.png" alt="logo docker" style="width: 20%"></p>
 
 
-<p align="center"><img src="img/logo-py.jpeg" alt="logo python" style="width: 20%"> <img src="img/logo-flask.jpeg" alt="logo flask" style="width: 20%"> <img src="img/sql_alchemy.png" alt="logo sqlalchemy" style="width: 20%"> </p>
+<p align="center"><img src="img/logo-py.png" alt="logo python" style="width: 20%"> <img src="img/flask-logo.png" alt="logo flask" style="width: 20%"> <img src="img/sql_alchemy.png" alt="logo sqlalchemy" style="width: 20%"> </p>
 
 ***
 
