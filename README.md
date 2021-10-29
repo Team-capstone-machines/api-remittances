@@ -4,6 +4,40 @@
 
 > [Here](https://github.com/Team-capstone-machines/first_API) is the link to the "Remittances as a Service" application repository.
 
+## File organization :open_file_folder:
+
+| FILE | DESCRIPTION |
+|--|--|
+| [Dockerfile](https://github.com/Team-capstone-machines/api-remittances/blob/main/Dockerfile) | Plain text file containing a set of instructions necessary to create a Docker image |
+| [app.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/app.py) | Flask application with handling the errors |
+| [function_help.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/function_help.py) | Helper functions to encrypt phone, convert number to integer, verify number and delete GMT |
+| [requirements.txt](https://github.com/Team-capstone-machines/api-remittances/blob/main/requirements.txt) | File containing the list of dependencies necessary for the correct operation of the application |
+
+<br></br>
+
+**Folder: api/v1/views**
+| FILE | DESCRIPTION |
+|--|--|
+| [history.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/api/v1/views/history.py) | Rest API in Flask to route history |
+| [phone.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/api/v1/views/phone.py) | Rest API in Flask to route phones |
+| [receiver.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/api/v1/views/receiver.py) | Rest API in Flask to route receiver |
+
+<br></br>
+
+**Folder: models**
+| FILE | DESCRIPTION |
+|--|--|
+| [history.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/models/history.py) | History class to ORM |
+| [phones.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/models/phones.py) | Phones class to ORM |
+| [receiver.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/models/receiver.py) | Receiver class to ORM |
+
+<br></br>
+
+**Folder: models/engine**
+| FILE | DESCRIPTION |
+|--|--|
+| [dbstorage.py](https://github.com/Team-capstone-machines/api-remittances/blob/main/models/engine/dbstorage.py) | DBStorage class |
+
 ## Description :page_facing_up:
 *An API designed for developers*
 
@@ -70,8 +104,15 @@ The deployment of this API is under a container registry named `raascontainer` w
 * [Twitter](https://twitter.com/vicuartas230)
 
 ***
-
-<p align="center"><img src="img/logo-nufi.png" alt="logo NUFI"></p>
+Project developed together with:
+<p align="center"><img src="img/logo-nufi.png" alt="logo NUFI" style="width: 20%"></p>
 
 ### Technologies and tools :zap:
+<p align="center"><img src="img/logo_light_bg.png" alt="logo stoplight" style="width: 20%"> <img src="img/azure-logo.png" alt="logo azure" style="width: 20%"> <img src="img/docker-logo.png" alt="logo docker" style="width: 20%"></p>
 
+
+<p align="center"><img src="img/logo-py.jpeg" alt="logo python" style="width: 20%"> <img src="img/logo-flask.jpeg" alt="logo flask" style="width: 20%"> <img src="img/sql_alchemy.png" alt="logo sqlalchemy" style="width: 20%"> </p>
+
+***
+
+<p align="center" style="color: #0642ff">2021 ©</p>
