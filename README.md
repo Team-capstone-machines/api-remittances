@@ -78,7 +78,7 @@ Apart from the errors specified in the API documentation in Stoplight, we have i
 ## Features :bulb:
 > Use of the most common HTTP status codes. They can be consulted in the API documentation as well as in the code implementation for our "Remittances as a Service" application.
 
->
+> It records, updates and validates the information with the different HTTP methods -GET, POST and PUT-, provided by the `remmitances` API. Each method has an appropriate syntax for its implementation.
 
 >
 
